@@ -13,5 +13,5 @@ RUN yum update -y && \
 EXPOSE 80
 
 # Start the httpd service when the container runs
-CMD ["httpd", "-D", "FOREGROUND"]
+CMD ["systemctl start httpd"]
 
